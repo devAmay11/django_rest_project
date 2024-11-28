@@ -49,4 +49,4 @@ def people(request):
         data = request.data
         obj = Person.objects.get(id=data["id"])
         obj.delete()
-        return Response({"message":"person deleted"})
+        return Response({"message":"person deleted succesfully"})
